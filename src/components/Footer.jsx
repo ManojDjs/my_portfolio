@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#050505] text-white py-16 px-6 md:px-12 border-t border-white/10 relative z-10">
       <div className="max-w-7xl mx-auto flex flex-col space-y-12">
-        
+
         {/* Top Section: Brand & Quick Links */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 pb-12 border-b border-white/10">
           <div className="space-y-2">
@@ -33,25 +33,25 @@ const Footer = () => {
         {/* Middle Section: Socials & External Profiles */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 text-xs font-mono text-white/75">
           <div className="flex items-center gap-6">
-            <a 
-              href={profile.github} 
-              target="_blank" 
+            <a
+              href={profile.github}
+              target="_blank"
               rel="noopener noreferrer"
               className="hover:text-red-500 transition-colors uppercase tracking-wider"
             >
               GitHub //
             </a>
-            <a 
-              href={profile.linkedin} 
-              target="_blank" 
+            <a
+              href={profile.linkedin}
+              target="_blank"
               rel="noopener noreferrer"
               className="hover:text-red-500 transition-colors uppercase tracking-wider"
             >
               LinkedIn //
             </a>
-            <a 
-              href={profile.leetcode} 
-              target="_blank" 
+            <a
+              href={profile.leetcode}
+              target="_blank"
               rel="noopener noreferrer"
               className="hover:text-red-500 transition-colors uppercase tracking-wider"
             >

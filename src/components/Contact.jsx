@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const Contact = () => {
   const [status, setStatus] = useState('');
-  
+
   // React Form State tracking
   const [formData, setFormData] = useState({
     firstName: '',
@@ -39,15 +39,15 @@ const Contact = () => {
 
   return (
     <section id="contact" className="bg-[#0b0b0b] w-full relative overflow-hidden flex items-end pt-20 md:pt-24 pb-0 border-t border-white/10 ">
-      
+
       {/* Background Animated Red Ambient Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-red-600/15 rounded-full blur-[160px] pointer-events-none z-0"></div>
 
       {/* Huge Background Parallax Portfolio Watermark Text */}
-      <div 
+      <div
         className="absolute top-0 left-0 w-full h-full flex flex-col justify-start items-center overflow-hidden pointer-events-none z-0 pt-16 md:pt-12 opacity-10"
       >
-        <div aria-hidden="true" 
+        <div aria-hidden="true"
           className="text-[25vw] leading-[0.75] font-black text-red-600 uppercase tracking-tighter scale-y-[1.6] origin-top"
           style={{ fontFamily: "'Bebas Neue', 'Impact', sans-serif" }}
         >
@@ -57,7 +57,7 @@ const Contact = () => {
 
       {/* Form Card Overlay */}
       <div className="relative z-10 w-full flex justify-end items-end">
-        <div 
+        <div
           className="bg-[#141414]/95  border-t border-l border-white/15 w-full md:w-[90%] lg:w-[82%] p-8 md:p-16 text-white flex flex-col justify-between rounded-tl-[3rem] shadow-[0_-25px_60px_rgba(0,0,0,0.9)] relative overflow-hidden"
         >
           {/* Subtle internal top crimson highlight glow */}
@@ -78,44 +78,44 @@ const Contact = () => {
           <p role="status" aria-live="polite" className="mb-4 text-sm text-red-400">{status}</p>
           <form onSubmit={handleSubmit} className="flex flex-col gap-12 md:gap-16 w-full">
             <div className="flex flex-col md:flex-row gap-12 md:gap-20 w-full">
-              
+
               {/* Left Column */}
               <div className="flex-1 flex flex-col gap-10">
                 <div className="relative">
                   <label htmlFor="firstName" className="mb-3 block text-sm font-medium text-white/80">First name</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     autoComplete="given-name"
-                    id="firstName" 
+                    id="firstName"
                     value={formData.firstName}
                     onChange={handleChange}
-                    placeholder="First Name" 
+                    placeholder="First Name"
                     required
                     className="w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-red-600 transition-colors placeholder-white/40 font-medium rounded-none text-white"
                   />
                 </div>
                 <div className="relative">
                   <label htmlFor="lastName" className="mb-3 block text-sm font-medium text-white/80">Last name</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     autoComplete="family-name"
-                    id="lastName" 
+                    id="lastName"
                     value={formData.lastName}
                     onChange={handleChange}
-                    placeholder="Last Name" 
+                    placeholder="Last Name"
                     required
                     className="w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-red-600 transition-colors placeholder-white/40 font-medium rounded-none text-white"
                   />
                 </div>
                 <div className="relative">
                   <label htmlFor="email" className="mb-3 block text-sm font-medium text-white/80">Email address</label>
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
                     autoComplete="email"
-                    id="email" 
+                    id="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="Email Address" 
+                    placeholder="Email Address"
                     required
                     className="w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-red-600 transition-colors placeholder-white/40 font-medium rounded-none text-white"
                   />
@@ -126,11 +126,11 @@ const Contact = () => {
               <div className="flex-1 flex flex-col">
                 <div className="relative h-full flex flex-col">
                   <label htmlFor="message" className="mb-3 block text-sm font-medium text-white/80">Message</label>
-                  <textarea 
-                    id="message" 
+                  <textarea
+                    id="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Type your message here..." 
+                    placeholder="Type your message here..."
                     required
                     className="w-full h-full min-h-[140px] bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-red-600 transition-colors placeholder-white/40 font-medium resize-none rounded-none text-white"
                   ></textarea>
@@ -142,13 +142,13 @@ const Contact = () => {
             <div className="flex flex-col md:flex-row gap-12 mt-4 pt-6 border-t border-white/10">
               {/* Left text */}
               <div className="flex-1 flex items-start gap-4 text-sm text-white/80">
-                <input 
-                  type="checkbox" 
+                <input
+                  type="checkbox"
                   required
-                  id="permission" 
+                  id="permission"
                   checked={formData.permission}
                   onChange={handleChange}
-                  className="mt-1 w-4 h-4 rounded-sm border-white/30 bg-transparent text-red-600 focus:ring-0 focus:ring-offset-0 cursor-pointer" 
+                  className="mt-1 w-4 h-4 rounded-sm border-white/30 bg-transparent text-red-600 focus:ring-0 focus:ring-offset-0 cursor-pointer"
                   style={{ accentColor: "#E50914" }}
                 />
                 <label htmlFor="permission" className="cursor-pointer max-w-[280px] leading-snug">
@@ -165,9 +165,9 @@ const Contact = () => {
                   <p className="max-w-[250px] leading-relaxed">
                     Ready to start a project or collaboration? Send a direct signal.
                   </p>
-                  
-                  <button 
-                    type="submit" 
+
+                  <button
+                    type="submit"
                     className="px-8 py-3.5 rounded bg-red-600 text-white font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-3 hover:bg-red-700 transition-all duration-300 group whitespace-nowrap shadow-[0_0_20px_rgba(229,9,20,0.6)] hover:scale-105"
                   >
                     Create Email Draft

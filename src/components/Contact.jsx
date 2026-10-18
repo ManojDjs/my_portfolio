@@ -1,8 +1,8 @@
-import React, { useRef, useState } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { profile } from '../profile';
+import { useState } from 'react';
 
 const Contact = () => {
-  const ref = useRef(null);
+  const [status, setStatus] = useState('');
   
   // React Form State tracking
   const [formData, setFormData] = useState({
@@ -12,14 +12,6 @@ const Contact = () => {
     message: '',
     permission: false
   });
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"]
-  });
-  
-  // Parallax translation for the big background text
-  const y = useTransform(scrollYProgress, [0, 1], ["-10%", "20%"]);
 
   // Handle input changes dynamically
   const handleChange = (e) => {
@@ -35,65 +27,65 @@ const Contact = () => {
     e.preventDefault();
 
     if (!formData.permission) {
-      alert("Please accept the contact permission checkbox.");
+      setStatus("Please give permission to contact you before creating the email draft.");
       return;
     }
 
-    console.log("Form Data Submitted Successfully:", formData);
-    alert(`Thanks ${formData.firstName}! Message captured successfully.`);
-    
-    setFormData({ firstName: '', lastName: '', email: '', message: '', permission: false });
+    const subject = encodeURIComponent(`Portfolio enquiry from ${formData.firstName} ${formData.lastName}`);
+    const body = encodeURIComponent(`Name: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\n\n${formData.message}`);
+    window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
+    setStatus('Your email app will open with a draft. Send it there to complete your message.');
   };
 
   return (
-    <section ref={ref} id="contact" className="bg-[#0b0b0b] w-full min-h-screen relative overflow-hidden flex items-end pt-32 pb-0 border-t border-white/10 select-none">
+    <section id="contact" className="bg-[#0b0b0b] w-full relative overflow-hidden flex items-end pt-20 md:pt-24 pb-0 border-t border-white/10 ">
       
-      {/* Background Cinematic Red Ambient Glow */}
+      {/* Background Animated Red Ambient Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-red-600/15 rounded-full blur-[160px] pointer-events-none z-0"></div>
 
-      {/* Huge Background Parallax Netflix Watermark Text */}
-      <motion.div 
-        style={{ y }}
+      {/* Huge Background Parallax Portfolio Watermark Text */}
+      <div 
         className="absolute top-0 left-0 w-full h-full flex flex-col justify-start items-center overflow-hidden pointer-events-none z-0 pt-16 md:pt-12 opacity-10"
       >
-        <h1 
-          className="text-[25vw] leading-[0.75] font-black text-red-600 uppercase tracking-tighter select-none scale-y-[1.6] origin-top"
+        <div aria-hidden="true" 
+          className="text-[25vw] leading-[0.75] font-black text-red-600 uppercase tracking-tighter scale-y-[1.6] origin-top"
           style={{ fontFamily: "'Bebas Neue', 'Impact', sans-serif" }}
         >
           CONTACT
-        </h1>
-      </motion.div>
+        </div>
+      </div>
 
       {/* Form Card Overlay */}
       <div className="relative z-10 w-full flex justify-end items-end">
-        <motion.div 
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="bg-[#141414]/95 backdrop-blur-2xl border-t border-l border-white/15 w-full md:w-[90%] lg:w-[82%] p-8 md:p-16 text-white flex flex-col justify-between rounded-tl-[3rem] shadow-[0_-25px_60px_rgba(0,0,0,0.9)] relative overflow-hidden"
+        <div 
+          className="bg-[#141414]/95  border-t border-l border-white/15 w-full md:w-[90%] lg:w-[82%] p-8 md:p-16 text-white flex flex-col justify-between rounded-tl-[3rem] shadow-[0_-25px_60px_rgba(0,0,0,0.9)] relative overflow-hidden"
         >
           {/* Subtle internal top crimson highlight glow */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent opacity-90"></div>
 
           <div className="flex items-center justify-between mb-12 md:mb-16">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded bg-red-600/10 border border-red-600/30 text-xs font-mono uppercase tracking-widest text-red-500">
-              <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-ping"></span>
-              <span>EPISODE 04 // GET IN TOUCH</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-red-600 "></span>
+              <span>GET IN TOUCH</span>
             </div>
-            <span className="text-xs font-mono text-white/40 tracking-wider hidden md:block">
-              // LET'S BUILD SOMETHING CINEMATIC
+            <span className="text-xs font-mono text-white/60 tracking-wider hidden md:block">
+              // LET'S BUILD SOMETHING TOGETHER
             </span>
           </div>
 
+          <h2 className="mb-6 text-3xl font-black tracking-tight md:text-4xl">Let’s build something useful.</h2>
+          <p className="mb-6 text-white/80"><a className="text-red-400 hover:underline" href={`mailto:${profile.email}`}>{profile.email}</a> · {profile.location}</p>
+          <p role="status" aria-live="polite" className="mb-4 text-sm text-red-400">{status}</p>
           <form onSubmit={handleSubmit} className="flex flex-col gap-12 md:gap-16 w-full">
             <div className="flex flex-col md:flex-row gap-12 md:gap-20 w-full">
               
               {/* Left Column */}
               <div className="flex-1 flex flex-col gap-10">
                 <div className="relative">
+                  <label htmlFor="firstName" className="mb-3 block text-sm font-medium text-white/80">First name</label>
                   <input 
                     type="text" 
+                    autoComplete="given-name"
                     id="firstName" 
                     value={formData.firstName}
                     onChange={handleChange}
@@ -103,8 +95,10 @@ const Contact = () => {
                   />
                 </div>
                 <div className="relative">
+                  <label htmlFor="lastName" className="mb-3 block text-sm font-medium text-white/80">Last name</label>
                   <input 
                     type="text" 
+                    autoComplete="family-name"
                     id="lastName" 
                     value={formData.lastName}
                     onChange={handleChange}
@@ -114,8 +108,10 @@ const Contact = () => {
                   />
                 </div>
                 <div className="relative">
+                  <label htmlFor="email" className="mb-3 block text-sm font-medium text-white/80">Email address</label>
                   <input 
                     type="email" 
+                    autoComplete="email"
                     id="email" 
                     value={formData.email}
                     onChange={handleChange}
@@ -129,6 +125,7 @@ const Contact = () => {
               {/* Right Column */}
               <div className="flex-1 flex flex-col">
                 <div className="relative h-full flex flex-col">
+                  <label htmlFor="message" className="mb-3 block text-sm font-medium text-white/80">Message</label>
                   <textarea 
                     id="message" 
                     value={formData.message}
@@ -144,9 +141,10 @@ const Contact = () => {
             {/* Bottom Section */}
             <div className="flex flex-col md:flex-row gap-12 mt-4 pt-6 border-t border-white/10">
               {/* Left text */}
-              <div className="flex-1 flex items-start gap-4 text-sm font-light text-white/70">
+              <div className="flex-1 flex items-start gap-4 text-sm text-white/80">
                 <input 
                   type="checkbox" 
+                  required
                   id="permission" 
                   checked={formData.permission}
                   onChange={handleChange}
@@ -159,9 +157,9 @@ const Contact = () => {
               </div>
 
               {/* Right text & button */}
-              <div className="flex-1 flex flex-col gap-8 text-xs text-white/50 font-light">
+              <div className="flex-1 flex flex-col gap-8 text-xs text-white/65 font-light">
                 <p className="leading-relaxed max-w-[400px]">
-                  This site is protected by security protocols and industry-standard privacy guidelines.
+                  This form opens your email app with a draft addressed to Manoj. Your message is sent only when you send that email.
                 </p>
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-6">
                   <p className="max-w-[250px] leading-relaxed">
@@ -172,7 +170,7 @@ const Contact = () => {
                     type="submit" 
                     className="px-8 py-3.5 rounded bg-red-600 text-white font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-3 hover:bg-red-700 transition-all duration-300 group whitespace-nowrap shadow-[0_0_20px_rgba(229,9,20,0.6)] hover:scale-105"
                   >
-                    Send Message
+                    Create Email Draft
                     <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
@@ -182,7 +180,7 @@ const Contact = () => {
             </div>
           </form>
 
-        </motion.div>
+        </div>
       </div>
     </section>
   );

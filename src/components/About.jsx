@@ -1,86 +1,27 @@
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { profile } from '../profile';
 
-gsap.registerPlugin(ScrollTrigger);
-
-const About = () => {
-  const sectionRef = useRef(null);
-  const cardRefs = useRef([]);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return;
-
-    // --- Cinematic Stagger Entrance on Scroll ---
-    gsap.fromTo(
-      cardRefs.current,
-      { y: 80, opacity: 0, scale: 0.95 },
-      {
-        y: 0,
-        opacity: 1,
-        scale: 1,
-        duration: 1,
-        stagger: 0.2,
-        ease: "power4.out",
-        scrollTrigger: {
-          trigger: section,
-          start: "top 70%",
-          toggleActions: "play none none reverse"
-        }
-      }
-    );
-
-    // --- Interactive Magnetic Mouse Spotlight per Bento Card ---
-    const cards = cardRefs.current;
-    const handleMouseMove = (e, card) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      card.style.setProperty('--mouse-x', `${x}px`);
-      card.style.setProperty('--mouse-y', `${y}px`);
-    };
-
-    cards.forEach((card) => {
-      if (!card) return;
-      const listener = (e) => handleMouseMove(e, card);
-      card.addEventListener('mousemove', listener);
-      return () => card.removeEventListener('mousemove', listener);
-    });
-
-  }, []);
-
-  const addToRefs = (el) => {
-    if (el && !cardRefs.current.includes(el)) {
-      cardRefs.current.push(el);
-    }
-  };
-
+export default function About() {
   return (
     <section
       id="about"
-      ref={sectionRef}
-      className="relative w-full min-h-screen bg-[#050505] text-white py-32 px-6 md:px-12 flex flex-col justify-center select-none overflow-hidden"
+      className="relative w-full bg-[#050505] text-white py-20 md:py-24 px-6 md:px-12 flex flex-col justify-center overflow-hidden"
     >
-      {/* Background Cinematic Red Ambient Glows */}
+      {/* Background Animated Red Ambient Glows */}
       <div className="absolute top-1/4 left-10 w-[500px] h-[500px] bg-red-600/10 rounded-full blur-[160px] pointer-events-none"></div>
       <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-red-900/10 rounded-full blur-[160px] pointer-events-none"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full space-y-16">
+      <div className="relative z-10 max-w-7xl mx-auto w-full space-y-10">
         
         {/* Section Header */}
         <div className="flex flex-col items-start space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded bg-black/80 backdrop-blur-2xl border border-red-600/40 text-xs font-mono uppercase tracking-widest text-white shadow-2xl">
-            <span className="w-2 h-2 rounded-full bg-red-600 animate-ping"></span>
-            <span className="text-red-500 font-bold">EPISODE 01</span>
-            <span className="text-white/40">|</span>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded bg-black/80  border border-red-600/40 text-xs font-mono uppercase tracking-widest text-white shadow-2xl">
+            <span className="w-2 h-2 rounded-full bg-red-600 "></span>
+            <span className="text-red-500 font-bold">ABOUT ME</span>
+            <span className="text-white/60">|</span>
             <span>ABOUT THE ENGINEER</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-white">
-            EPISODE SYNOPSIS <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-600 to-red-700 drop-shadow-[0_0_30px_rgba(229,9,20,0.4)]">
-              ORIGIN & VISION.
-            </span>
+          <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-white">
+About my work.
           </h2>
         </div>
 
@@ -89,8 +30,7 @@ const About = () => {
           
           {/* Card 1: Bio & Academic Core (Span 7) */}
           <div
-            ref={addToRefs}
-            className="md:col-span-7 p-8 md:p-12 bg-[#141414]/90 backdrop-blur-2xl border border-white/10 rounded-[2.5rem] shadow-2xl flex flex-col justify-between relative group hover:border-red-600/60 transition-all duration-500 overflow-hidden"
+            className="md:col-span-7 p-8 md:p-12 bg-[#141414]/90  border border-white/10 rounded-[2.5rem] shadow-2xl flex flex-col justify-between relative group hover:border-red-600/60 transition-all duration-500 overflow-hidden"
           >
             {/* Real-time mouse hover spotlight highlight */}
             <div 
@@ -105,26 +45,25 @@ const About = () => {
             </div>
             
             <div className="space-y-5 relative z-10">
-              <h3 className="text-xs font-mono uppercase tracking-widest text-red-500 font-bold">Cast & Background</h3>
+              <h3 className="text-xs font-mono uppercase tracking-widest text-red-500 font-bold">Background & Focus</h3>
               <p className="text-lg md:text-xl font-medium text-white/90 leading-relaxed">
-                I am <span className="text-white font-bold drop-shadow">Dasari Venkata Ratna Sri Sushmita</span>, a B.Tech student in Artificial Intelligence and Machine Learning at Aditya Engineering College.
+                I am <span className="text-white font-bold drop-shadow">{profile.name}</span>, a Technical Lead working across software, AI and data engineering, based in {profile.location}.
               </p>
-              <p className="text-sm md:text-base text-white/60 font-light leading-relaxed">
-                My technical narrative bridges rigorous algorithmic problem-solving with full-stack software architecture, translating complex backend logic into seamless, high-performance interfaces.
+              <p className="text-sm md:text-base text-white/75 leading-relaxed">
+                {profile.bio}
               </p>
             </div>
             
             <div className="pt-8 flex flex-wrap gap-2 relative z-10">
-              <span className="px-3.5 py-1.5 rounded bg-white/5 border border-white/10 text-xs font-mono text-white/80">AI & ML</span>
-              <span className="px-3.5 py-1.5 rounded bg-white/5 border border-white/10 text-xs font-mono text-white/80">Full-Stack Development</span>
-              <span className="px-3.5 py-1.5 rounded bg-white/5 border border-white/10 text-xs font-mono text-white/80">System Architecture</span>
+              <span className="px-3.5 py-1.5 rounded bg-white/5 border border-white/10 text-xs font-mono text-white/80">AI Engineering</span>
+              <span className="px-3.5 py-1.5 rounded bg-white/5 border border-white/10 text-xs font-mono text-white/80">Software Engineering</span>
+              <span className="px-3.5 py-1.5 rounded bg-white/5 border border-white/10 text-xs font-mono text-white/80">Data Engineering</span>
             </div>
           </div>
 
           {/* Card 2: Fellowships & Achievements (Span 5) */}
           <div
-            ref={addToRefs}
-            className="md:col-span-5 p-8 md:p-12 bg-[#141414]/90 backdrop-blur-2xl border border-white/10 rounded-[2.5rem] shadow-2xl flex flex-col justify-between relative group hover:border-red-600/60 transition-all duration-500 overflow-hidden"
+            className="md:col-span-5 p-8 md:p-12 bg-[#141414]/90  border border-white/10 rounded-[2.5rem] shadow-2xl flex flex-col justify-between relative group hover:border-red-600/60 transition-all duration-500 overflow-hidden"
           >
             {/* Real-time mouse hover spotlight highlight */}
             <div 
@@ -139,32 +78,31 @@ const About = () => {
             </div>
             
             <div className="space-y-5 relative z-10">
-              <h3 className="text-xs font-mono uppercase tracking-widest text-red-500 font-bold">Milestones & Accolades</h3>
+              <h3 className="text-xs font-mono uppercase tracking-widest text-red-500 font-bold">Engineering Experience</h3>
               <ul className="space-y-3.5 text-sm text-white/80 font-light">
                 <li className="flex items-start gap-2.5">
                   <span className="text-red-500 font-bold">&#8250;</span>
-                  <span>National Semi-Finalist in <strong className="text-white">Flipkart GRiD 7.0</strong> competition.</span>
+                  <span>Data engineering with <strong className="text-white">PySpark, Pandas, SQL and Azure Databricks</strong>.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="text-red-500 font-bold">&#8250;</span>
-                  <span>Member of the elite <strong className="text-white">AlgoUniversity Tech Fellowship</strong> for advanced data structures.</span>
+                  <span>Predictive modelling for <strong className="text-white">jet engine maintenance</strong> and data pipeline management.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="text-red-500 font-bold">&#8250;</span>
-                  <span>Certified <strong className="text-white">GitHub Foundations</strong> & <strong className="text-white">AWS Certified AI Practitioner</strong>.</span>
+                  <span>API development with <strong className="text-white">Django REST Framework and Flask</strong>, with delivery across the software lifecycle.</span>
                 </li>
               </ul>
             </div>
             
-            <div className="pt-6 font-mono text-xs text-white/40 relative z-10">
-              // SEASON_01 HIGHLIGHTS
+            <div className="pt-6 font-mono text-xs text-white/60 relative z-10">
+              // EXPERIENCE HIGHLIGHTS
             </div>
           </div>
 
           {/* Card 3: Technical Ecosystem (Span 12) */}
           <div
-            ref={addToRefs}
-            className="md:col-span-12 p-8 md:p-12 bg-[#141414]/90 backdrop-blur-2xl border border-white/10 rounded-[2.5rem] shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 hover:border-red-600/60 transition-all duration-500 overflow-hidden relative group"
+            className="md:col-span-12 p-8 md:p-12 bg-[#141414]/90  border border-white/10 rounded-[2.5rem] shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 hover:border-red-600/60 transition-all duration-500 overflow-hidden relative group"
           >
             {/* Real-time mouse hover spotlight highlight */}
             <div 
@@ -176,11 +114,11 @@ const About = () => {
 
             <div className="space-y-2 text-left relative z-10">
               <h3 className="text-xs font-mono uppercase tracking-widest text-red-500 font-bold">Production Tech Stack</h3>
-              <p className="text-base md:text-lg font-semibold text-white">Equipped with industry-grade instruments for robust scaling.</p>
+              <p className="text-base md:text-lg font-semibold text-white">The tools I use across software, AI and data engineering.</p>
             </div>
             
             <div className="flex flex-wrap items-center gap-3 relative z-10">
-              {['React', 'Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Docker', 'JavaScript'].map((tech, idx) => (
+              {['Python', 'PySpark', 'SQL', 'Azure', 'Databricks', 'Docker', 'Django'].map((tech, idx) => (
                 <span
                   key={idx}
                   className="px-4 py-2 rounded bg-white/[0.04] border border-white/10 text-xs font-mono uppercase tracking-wider text-white shadow-inner hover:bg-red-600/20 hover:border-red-600/40 hover:scale-105 transition-all"
@@ -197,5 +135,3 @@ const About = () => {
     </section>
   );
 };
-
-export default About;

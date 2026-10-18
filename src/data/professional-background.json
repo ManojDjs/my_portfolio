@@ -1,0 +1,493 @@
+{
+  "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/",
+  "lastVerifiedAt": "2026-10-18",
+  "sourceNote": "Read from the signed-in LinkedIn profile with Manoj’s authorization. Employment descriptions are condensed; received recommendation quotes retain the source wording. Credential status is as listed on LinkedIn, not independently verified with issuers. Current project details are supplemental information confirmed directly by Manoj.",
+  "experience": [
+    {
+      "id": "expleo-senior",
+      "role": "Senior Data Engineer",
+      "company": "Expleo Group",
+      "location": "Derby, England, United Kingdom · Hybrid",
+      "dates": "Jul 2023 – Present",
+      "description": "Working for Rolls-Royce PLC.",
+      "highlights": [
+        "Data engineering and predictive maintenance modelling for jet engines using PySpark, Pandas, SQL, Azure DevOps and Databricks.",
+        "Productionizing data services with Kubernetes and developing microservices with Azure Functions and Azure Kubernetes Service (AKS).",
+        "Data and pipeline management, analytics integration with Tableau and Power BI, automated testing, and delivery across the software lifecycle."
+      ],
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/experience/",
+      "skills": [
+        "Azure Databricks",
+        "Workflow Management",
+        "Python (Programming Language)",
+        "PySpark",
+        "Pandas (Software)",
+        "Machine Learning",
+        "Azure Data Lake",
+        "Data Analytics",
+        "Azure Synapse analytics",
+        "Databricks ai",
+        "Azure Data Factory",
+        "Leadership",
+        "Microsoft Azure",
+        "NumPy",
+        "Data Modeling",
+        "Big Data",
+        "Azure DevOps",
+        "Data Science",
+        "FastAPI",
+        "Software Development",
+        "Azure Service Bus",
+        "Data Warehousing",
+        "Agile Methodologies"
+      ],
+      "skillsSourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/overlay/2224879832/skill-associations-details/?associationType=position",
+      "currentProject": {
+        "title": "Agentic AI application · Azure & Databricks",
+        "description": "Building FastAPI and Python services with test-driven development, unit and integration tests, and iterative refactoring. The AI application combines LangGraph agents, MLflow lifecycle tooling, and Azure/Databricks data platforms, with a React frontend.",
+        "frameworks": [
+          "Azure AI-200 — Developing AI Cloud Solutions on Azure",
+          "Databricks Generative AI Engineer Associate"
+        ],
+        "skills": [
+          "FastAPI",
+          "Python",
+          "Test-Driven Development (TDD)",
+          "PyTest",
+          "Unit Testing",
+          "Integration Testing",
+          "Docker",
+          "Kubernetes",
+          "Azure DevOps",
+          "Databricks AI Search",
+          "RAG",
+          "LangChain",
+          "Prompt Engineering",
+          "Embeddings",
+          "Model Serving",
+          "MLflow",
+          "Unity Catalog",
+          "GenAI Evaluation",
+          "Azure AI Services",
+          "LangGraph",
+          "Agent Workflows"
+        ],
+        "source": "Current project details confirmed directly by Manoj on 18 October 2026; supplemental to LinkedIn. Manoj subsequently confirmed Azure AI-200 and Databricks GenAI Engineer Associate as earned qualifications.",
+        "applicationFrontend": "React"
+      }
+    },
+    {
+      "id": "expleo-data-engineer",
+      "role": "Data Engineer",
+      "company": "Expleo Group",
+      "location": "Derby, England, United Kingdom · Hybrid",
+      "dates": "Mar 2022 – Jul 2023",
+      "description": "Data engineering and predictive maintenance for jet engines.",
+      "highlights": [
+        "Built and managed data pipelines using PySpark, Pandas, SQL and Azure Databricks.",
+        "Managed Databricks orchestration workflows and dynamic clusters for cost optimization.",
+        "Supported data warehousing, Azure DevOps pipelines, manual and automated testing, and code refactoring."
+      ],
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/experience/",
+      "skills": [
+        "Azure Databricks",
+        "Workflow Management",
+        "Tabelaue",
+        "Python (Programming Language)",
+        "Git",
+        "PySpark",
+        "Apache Spark",
+        "Machine Learning",
+        "Azure Data Lake",
+        "Data",
+        "Data Analytics",
+        "Analytics",
+        "Azure Synapse analytics",
+        "Azure Data Factory",
+        "Serverless",
+        "Databricks",
+        "Microsoft Azure",
+        "Data Modeling",
+        "Big Data",
+        "Azure DevOps",
+        "Data Science",
+        "Azure Service Bus",
+        "Data Warehousing",
+        "Agile Methodologies",
+        "Microsoft Power BI",
+        "Data Mining"
+      ],
+      "skillsSourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/overlay/1935310285/skill-associations-details/?associationType=position"
+    },
+    {
+      "id": "rig-associate",
+      "role": "Associate Python Developer",
+      "company": "RIG TECHNOLOGIES PRIVATE LIMITED",
+      "location": "Chennai, Tamil Nadu, India · Remote",
+      "dates": "Jan 2021 – Dec 2021",
+      "description": "REST API development for a food delivery application using Django REST Framework.",
+      "highlights": [
+        "Implemented JWT authentication and authorization, Django ORM data access, pagination, caching and query optimization.",
+        "Developed unit and integration tests, integrated third-party services, and worked with frontend and DevOps teams on delivery.",
+        "Participated in Agile delivery and mentored junior developers."
+      ],
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/experience/",
+      "skills": [
+        "Python (Programming Language)",
+        "Git",
+        "Vue.js",
+        "Kubernetes",
+        "Vuetify",
+        "Amazon S3",
+        "Django REST Framework",
+        "Microsoft Azure",
+        "Django",
+        "AWS Lambda",
+        "Vuex",
+        "Amazon Web Services (AWS)",
+        "Agile Methodologies"
+      ],
+      "skillsSourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/overlay/1928260282/skill-associations-details/?associationType=position"
+    },
+    {
+      "id": "northumbria-student-worker",
+      "role": "Student Worker",
+      "company": "Northumbria University",
+      "location": "Newcastle upon Tyne, England, United Kingdom · Remote",
+      "dates": "Feb 2021 – May 2021",
+      "description": "Apprenticeship working with the University of Glasgow.",
+      "highlights": [
+        "Developed full-stack applications for mental healthcare.",
+        "Used machine learning and computer vision for remote heart rate sensing with a webcam."
+      ],
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/experience/",
+      "skills": [
+        "Azure Databricks",
+        "Python (Programming Language)",
+        "PySpark",
+        "Vuetify",
+        "Leadership",
+        "Databricks",
+        "Microsoft Azure",
+        "Data Modeling",
+        "Microsoft Power BI"
+      ],
+      "skillsSourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/overlay/1588736600/skill-associations-details/?associationType=position"
+    },
+    {
+      "id": "rig-python",
+      "role": "Python Developer",
+      "company": "RIG TECHNOLOGIES PRIVATE LIMITED",
+      "location": "Chennai, Tamil Nadu, India",
+      "dates": "Feb 2018 – Feb 2020",
+      "description": "Python and Django REST Framework development for a food delivery application.",
+      "highlights": [
+        "Built and maintained REST APIs with JWT authentication, Django ORM and third-party integrations.",
+        "Improved API performance with pagination, caching and query optimization; developed unit and integration tests.",
+        "Collaborated across frontend, DevOps and Agile delivery teams."
+      ],
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/experience/",
+      "skills": [
+        "Python (Programming Language)",
+        "Vuetify"
+      ],
+      "skillsSourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/overlay/1853701585/skill-associations-details/?associationType=position"
+    }
+  ],
+  "education": [
+    {
+      "id": "northumbria-masters",
+      "institution": "Northumbria University",
+      "qualification": "Master’s degree, Advanced Computer Science",
+      "dates": "Sep 2019 – Aug 2021",
+      "grade": "Merit",
+      "description": "Focus on Big Data, Cloud Computing and Data Science, with machine learning, deep learning, computer vision and project management.",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/education/"
+    },
+    {
+      "id": "andhra-btech",
+      "institution": "Andhra University",
+      "qualification": "Bachelor of Technology (BTech), Computer Science",
+      "dates": "2014 – 2018",
+      "grade": "83 (as listed on LinkedIn)",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/education/"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "azure-ai-cloud-developer-ai200",
+      "name": "Microsoft Certified: Azure AI Cloud Developer Associate (AI-200)",
+      "issuer": "Microsoft",
+      "status": "earned",
+      "showLink": false,
+      "source": "Earned qualification confirmed directly by Manoj on 18 October 2026. No dates, credential IDs or links supplied."
+    },
+    {
+      "id": "databricks-genai-engineer-associate",
+      "name": "Databricks Certified Generative AI Engineer Associate",
+      "issuer": "Databricks",
+      "status": "earned",
+      "showLink": false,
+      "source": "Earned qualification confirmed directly by Manoj on 18 October 2026. No dates, credential IDs or links supplied."
+    },
+    {
+      "id": "genai-fundamentals",
+      "name": "Academy Accreditation - Generative AI Fundamentals",
+      "issuer": "Databricks",
+      "issued": "Jun 2025",
+      "credentialId": "152860783",
+      "credentialUrl": "https://credentials.databricks.com/7ac1dacb-3dd1-4423-a6b8-cdf865b67090",
+      "expires": "Jun 2027",
+      "status": "",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "csharp-microsoft",
+      "name": "C# with Microsoft",
+      "issuer": "Microsoft",
+      "issued": "May 2024",
+      "credentialId": "fcc685986d6-92c9-48d1-ab9f-262693540df6-fcswm",
+      "credentialUrl": "https://freecodecamp.org/certification/fcc685986d6-92c9-48d1-ab9f-262693540df6/foundational-c-sharp-with-microsoft",
+      "expires": "",
+      "status": "",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "azure-data-factory",
+      "name": "Azure Data Factory",
+      "issuer": "Udemy",
+      "issued": "Jan 2024",
+      "credentialId": "",
+      "credentialUrl": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-d5d633d7-8f2c-4fa2-8671-cc9ad0997f26.pdf",
+      "expires": "",
+      "status": "",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "kubernetes-lab",
+      "name": "Udemy Labs - Online Kubernetes Lab Hands On",
+      "issuer": "KodeKloud",
+      "issued": "Jan 2024",
+      "credentialId": "2DEA83D7A5BF-2DEA89BD59BC-2DEA7DA49517",
+      "credentialUrl": "https://kodekloud.com/certificate-verification/2DEA83D7A5BF-2DEA89BD59BC-2DEA7DA49517/",
+      "expires": "",
+      "status": "",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "docker-lab",
+      "name": "Udemy Labs – Docker",
+      "issuer": "KodeKloud",
+      "issued": "Jan 2024",
+      "credentialId": "2DEA83D7A5BF-2DF3BBA65E4C-2DEA7DA49517",
+      "credentialUrl": "https://kodekloud.com/certificate-verification/2DEA83D7A5BF-2DF3BBA65E4C-2DEA7DA49517/",
+      "expires": "",
+      "status": "",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "bcg-data-science",
+      "name": "(BCG) Data Science Virtual Experience Programme",
+      "issuer": "Boston Consulting Group (BCG)",
+      "issued": "Aug 2023",
+      "credentialId": "Tcz8gTtprzAS4xSoK_BCG_Cp7fMyFy7zpBMJ8kQ_1691149054646_completion_certificate",
+      "credentialUrl": "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/BCG%20/Tcz8gTtprzAS4xSoK_BCG_Cp7fMyFy7zpBMJ8kQ_1691149054646_completion_certificate.pdf",
+      "expires": "",
+      "status": "",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "ba-data-science",
+      "name": "(BA) Data Science Virtual Experience Programme",
+      "issuer": "British Airways",
+      "issued": "Apr 2023",
+      "credentialId": "Cp7fMyFy7zpBMJ8kQ",
+      "credentialUrl": "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/British%20Airways/NjynCWzGSaWXQCxSX_British%20Airways_Cp7fMyFy7zpBMJ8kQ_1682542979969_completion_certificate.pdf",
+      "expires": "",
+      "status": "",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "datacamp-testing",
+      "name": "Unit Testing for Data Science in Python",
+      "issuer": "DataCamp",
+      "issued": "Nov 2022",
+      "credentialId": "",
+      "credentialUrl": "https://www.datacamp.com/statement-of-accomplishment/course/4123d101582b5e5773d499c250364e994e2783df",
+      "expires": "",
+      "status": "",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "kaggle-machine-learning",
+      "name": "Intermediate Machine Learning",
+      "issuer": "Kaggle",
+      "issued": "Nov 2022",
+      "credentialId": "",
+      "credentialUrl": "https://www.kaggle.com/learn/certification/djsmanoj/intermediate-machine-learning",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "kaggle-sql",
+      "name": "Advanced SQL",
+      "issuer": "Kaggle",
+      "issued": "Nov 2022",
+      "credentialId": "",
+      "credentialUrl": "https://www.kaggle.com/learn/certification/djsmanoj/advanced-sql",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "kaggle-pandas",
+      "name": "Pandas",
+      "issuer": "Kaggle",
+      "issued": "Oct 2022",
+      "credentialId": "",
+      "credentialUrl": "https://www.kaggle.com/learn/certification/djsmanoj/pandas",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "linkedin-javascript",
+      "name": "JavaScript Essential Training",
+      "issuer": "LinkedIn",
+      "issued": "Sep 2020",
+      "credentialId": "",
+      "credentialUrl": "https://www.linkedin.com/learning/certificates/62fd0c2be2de0f9325b6ec2985c531a0fcd5aa2f845c6437b6df355ca75bb058/",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "hackerrank-problem-solving",
+      "name": "Problem Solving",
+      "issuer": "HackerRank",
+      "issued": "May 2020",
+      "credentialId": "",
+      "credentialUrl": "https://www.hackerrank.com/certificates/b3af819bd68b",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "hackerrank-basic-python",
+      "name": "Basic Python",
+      "issuer": "HackerRank",
+      "issued": "May 2020",
+      "credentialId": "python certificate",
+      "credentialUrl": "https://www.hackerrank.com/certificates/c7a6503d40f5",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "hackerrank-javascript",
+      "name": "Java script Basics",
+      "issuer": "HackerRank",
+      "issued": "Mar 2020",
+      "credentialId": "https://www.hackerrank.com/certificates/50c363e40276",
+      "credentialUrl": "https://www.hackerrank.com/certificates/50c363e40276",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "hackerrank-advanced-python",
+      "name": "Advanced Python",
+      "issuer": "HackerRank",
+      "issued": "Apr 2019",
+      "credentialId": "https://www.hackerrank.com/certificates/50495332fc60",
+      "credentialUrl": "https://www.hackerrank.com/certificates/50495332fc60",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "mta-software",
+      "name": "Microsoft Technology Associate: Software Development Fundamentals (MTA)",
+      "issuer": "Microsoft",
+      "issued": "May 2015",
+      "credentialId": "F457-4844",
+      "credentialUrl": "",
+      "expires": "",
+      "status": "",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "hackerrank-intermediate-python",
+      "name": "Intermediate Python",
+      "issuer": "HackerRank",
+      "issued": "",
+      "credentialId": "https://www.hackerrank.com/certificates/124a5d13c0c9",
+      "credentialUrl": "https://www.hackerrank.com/certificates/124a5d13c0c9",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    },
+    {
+      "id": "databricks-fundamentals",
+      "name": "Academy Accreditation - Databricks Fundamentals",
+      "issuer": "Databricks",
+      "issued": "Jun 2025",
+      "credentialId": "152998292",
+      "credentialUrl": "https://credentials.databricks.com/75aed11a-0049-4592-8b0d-751c121a4527",
+      "expires": "Jun 2026",
+      "status": "expired",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/certifications/"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "prashant-subedi",
+      "author": "Prashant Subedi",
+      "authorRole": "Engineering Manager at Solo",
+      "date": "November 24, 2024",
+      "relationship": "Worked on the same team",
+      "authorProfileUrl": "https://www.linkedin.com/in/prashant-subedi-8535b6104/",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/recommendations/",
+      "excerpt": "What truly sets Manoj apart is his unwavering commitment to continuous improvement.",
+      "quote": "I had the pleasure of working alongside Manoj at Expleo, where we both served as Senior Data Engineers on the same project. When I first joined the team, Manoj was instrumental in providing me with valuable domain knowledge and insights into the existing infrastructure.\n\nManoj is a highly skilled Data Engineer with expertise in Python and Azure. He is also always willing to learn new things to solve problems. I have seen multiple instances where Manoj was assigned to a project where he initially didn't have familiarity with the tech stack, only for him to quickly learn it and deliver quality results within a shorter timeline.\n\nWhat truly sets Manoj apart is his unwavering commitment to continuous improvement. He is always seeking ways to enhance the products we work on, demonstrating a proactive and innovative approach. Additionally, Manoj was consistently available for discussions, offering thoughtful solutions to any problems we encountered. Working with Manoj has been a rewarding experience, and I highly recommend him for his expertise, dedication, and collaborative spirit."
+    },
+    {
+      "id": "minn-pongpaibul",
+      "author": "Minn Pongpaibul",
+      "authorRole": "Senior Digital Technical Specialist at Rolls-Royce",
+      "date": "October 28, 2024",
+      "relationship": "Client",
+      "authorProfileUrl": "https://www.linkedin.com/in/minn-pongpaibul-4855045b/",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/recommendations/",
+      "excerpt": "He consistently delivers above and beyond our expectation and continues to be a valuable member of the team",
+      "quote": "I've had the pleasure of working with Manoj for a couple of years and can wholeheartedly say that he is a great data engineer with unique blend of data science, computer science and data engineering skills. He consistently delivers above and beyond our expectation and continues to be a valuable member of the team so I have no reservations in recommending him or working with him in any future projects!"
+    },
+    {
+      "id": "martin-fearon",
+      "author": "Martin Fearon",
+      "authorRole": "Data Scientist",
+      "date": "August 8, 2024",
+      "relationship": "Worked on the same team",
+      "authorProfileUrl": "https://www.linkedin.com/in/martin-fearon-92327181/",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/recommendations/",
+      "excerpt": "His technical expertise has made him the go-to lead for many of our most complex digital solutions.",
+      "quote": "I’ve had the pleasure of working with Manoj in the Model Factory at Rolls-Royce for nearly two years. During this time, Manoj has consistently demonstrated mastery in both data engineering and software development. His technical expertise has made him the go-to lead for many of our most complex digital solutions.\nManoj approaches highly challenging business problems with a methodical mindset, delivering robust, scalable solutions at an impressive pace. His work is not only technically sound but also thoughtfully aligned with the broader business goals.\nBeyond his technical acumen, Manoj is an invaluable team player. He brings an unrelenting enthusiasm for digital technology and a genuine care for his teammates. His drive for continuous improvement is infectious, and he is always eager to share his knowledge and mentor others.\n\nBeyond his technical acumen, Manoj is an invaluable team player. He brings an unrelenting enthusiasm for digital technology and a genuine care for his teammates. His drive for continuous improvement is infectious, and he is always eager to share his knowledge and mentor others. I’m grateful for the opportunity to work closely with Manoj"
+    },
+    {
+      "id": "nipuni-karunaratne",
+      "author": "Nipuni Karunaratne",
+      "authorRole": "VP of Digital @ Rolls Royce Plc",
+      "date": "July 24, 2024",
+      "relationship": "Managed Manoj directly",
+      "authorProfileUrl": "https://www.linkedin.com/in/nipunikarunaratne/",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/recommendations/",
+      "excerpt": "Manoj is an exceptional data engineer whose technical expertise and problem-solving abilities consistently exceed expectations.",
+      "quote": "It’s been a pleasure working with Manoj over the past three years in my capacity as Head of Model Factory at Rolls Royce. Manoj is an exceptional data engineer whose technical expertise and problem-solving abilities consistently exceed expectations.\n\nManoj has played a pivotal role in several high-impact projects, optimizing our data engineering & data science infrastructure, and integrating state-of-the-art technologies. His mastery of digital technologies has been supportive to our success at Model Factory.\n\nWhat sets Manoj apart is his ability to simplify complex data challenges, creating efficient solutions that enhance our data processing capabilities. His analytical skills and attention to detail ensure the accuracy and reliability of our systems, supporting informed decision-making across the organization.\nManoj’s proactive and continuous learning approach has kept our team at the forefront of industry trends.\n\nBeyond his technical skills, Manoj excels as a team player and leader. He communicates complex concepts effectively to both technical and non-technical stakeholders, fostering a collaborative environment.\nManoj’s dedication, technical expertise, and collaborative spirit make him an outstanding data engineer and a tremendous asset to any team. I highly recommend him for any opportunity that comes his way.\nit was a pleasure having you in the team and thank you for being amazing 👏🏼"
+    },
+    {
+      "id": "tarun-m",
+      "author": "Tarun M",
+      "authorRole": "Data Engineer at Expleo Group",
+      "date": "July 3, 2024",
+      "relationship": "Worked on the same team",
+      "authorProfileUrl": "https://www.linkedin.com/in/itarunm/",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/recommendations/",
+      "excerpt": "One notable instance was when he refactored the code base, reducing runtimes from days to just minutes.",
+      "quote": "I have had the pleasure of working with Manoj since my first day at Expleo, where we were both placed with our client Rolls-Royce Digital Team. Manoj served initially as a Data Engineer and later as a Senior Data Engineer.\n\nThroughout our time working together, Manoj consistently demonstrated exceptional leadership and a profound understanding of data science and software engineering. In a project that was in its initial phase when we started, Manoj leveraged his extensive experience to revolutionize the design of one of the products, making it significantly more efficient for our clients. His dedication to providing top-notch solutions and timely updates has continually improved our products. Manoj’s expertise in PySpark, API development, Full-Stack development, Azure Databricks, Azure Synapse Analytics and the whole Azure tools in general has been instrumental in our success. One notable instance was when he refactored the code base, reducing runtimes from days to just minutes. His ability to deliver cost-effective solutions has been invaluable to our clients.\n\nBeyond his technical skills, Manoj is a joy to work with. He consistently brings his best to work, fostering knowledge-sharing within our team. As a newcomer, I found his support invaluable. Manoj’s willingness to guide and mentor others has created a welcoming and collaborative environment for everyone. The guidance I get from Manoj to improve myself and my skillsets is an added benefit. I feel proud to be his teammate and a mentee at Expleo.\n\nManoj is open-minded and values every opinion, enhancing our solutions through thoughtful discussions. His exemplary communication and problem-solving skills set him apart from other developers. I am confident that Manoj will continue to excel and make significant positive impacts wherever he goes. He would be an invaluable asset to any team, and I highly recommend him for any future endeavours."
+    },
+    {
+      "id": "irene-virdis",
+      "author": "Irene Virdis",
+      "authorRole": "Safety and Reliability Engineer, AMIMechE, PhD",
+      "date": "April 27, 2023",
+      "relationship": "Worked on the same team",
+      "authorProfileUrl": "https://www.linkedin.com/in/irene-virdis-538411215/",
+      "sourceUrl": "https://www.linkedin.com/in/jaya-deep-satya-manoj-doddi-8b5064118/details/recommendations/",
+      "excerpt": "Manoj has impressive technical skills, but equally impressive are his team player skills and his natural attitude to share knowledge",
+      "quote": "To whom it may concern\n\nIt is my pleasure to recommend Manoj Jaya Deep Satya for a position as Data Engineer.\n\nMy name is Irene Virdis, a Data Engineer at Expleo group. I started working with the group on March 2022 and that is where I met Manoj.\nManoj and I worked together as Data Engineers in a project for Rolls Royce plc; our main responsibility was the development of tools for predictive maintenance applied to in-service civil aircrafts’ fleets. When I joined the project I had little experience in programming, and Manoj helped me to grow and develop more skills.\n\nManoj is an incredibly talented developer and data engineer, his knowledge ranges from code and tests development for the back end to User Interface (UI) development. The languages used for the aforementioned project in Rolls Royce were Python, SQL, Spark; the development was following an Agile approach, using Azure DevOps tools, DVSM environment, Office package tools (especially Word, Excel, and Power Point), Databricks, SQL Server Management Studio, Vue.js for the UI, shell scripting. He has been a key team member for the development of testing strategy, being among the first who spontaneously identified the motivations and presented a detailed strategy plan. He is capable to deliver tasks in time and quality when asked, but also to suggest new ideas, strategies, and improvements spontaneously, without being asked.\n\nManoj has impressive technical skills, but equally impressive are his team player skills and his natural attitude to share knowledge as well as guiding the team with inspiring ideas. He spontaneously organizes meetings with the team to improve the bond and the dialogue among us as well as meetings where he explains us all the new tools he learnt to use and shares suggestions about how to improve our skills. When asked for help, he shows patience and care about the co-workers.\n\nIf more information about Manoj’s work is needed, please do not hesitate to contact me via Linked-In message:  https://www.linkedin.com/in/irene-virdis-538411215/\n\nSincerely,\nIrene Virdis\nData Engineer, PhD in Industrial Engineering"
+    }
+  ]
+}
